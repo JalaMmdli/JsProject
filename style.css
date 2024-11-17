@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 336px;
+    margin:0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    text-align: center;
+}
+.yellow{
+    overflow: hidden;
+    background: #FFDC40;
+    height: 28px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+h1{
+font-size: 26px;
+font-weight: 900;
+line-height: 30.47px;
+height: 34px;
+
+}
+.main{
+    padding: 20px;
+}
+.hidden{
+   display:none ;
+}
+.sortBtns{
+   text-align: right;
+
+}
+.sort , .remove{
+    border: none;
+    background:white;
+    color: #C4C4C4;
+}
+.sort{
+    padding: 10px 5px;
+}
+.sort:hover{
+    color: black;
+}
+.remove:hover .hidden{
+   display:inline;
+   color: purple;
+}
+.remove:hover .remo{
+   display: none;
+}
+.remove{
+    /* margin-right: 15px; */
+}
+.inp{
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.inp input{
+    border: none;
+    width: 80%;
+    outline: none;
+}
+
+#list{
+  list-style: none;
+  padding: 0;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    width: 100%;
+}
+
+.li-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
+.add{
+    width: 150px;
+    height: 40px;
+    /* border-radius: 71px 0px 0px 0px; */
+margin: 0 auto;
+    
+     
+}
+.add button{
+    border: none;
+    background-color: white;
+}
+.addInp{
+    border-radius:50% ;
+    width: 40px;
+    height: 40px;
+    background-color: #9953F1 !important;
+    color: white;
+    position:fixed;
+    z-index: 1;
+}
+.addBtn{
+    margin-left: 20px;
+    width: 130px;
+    height: 40px;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.41px;
+background-color: #833AE0 !important;
+color: white;
+border-top-right-radius: 71px;
+border-bottom-right-radius: 71px;
+}

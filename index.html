@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="yellow"></div>
+        <div class="main">
+
+          <h1>To-do list</h1>
+
+          <div class="sortBtns">
+            <button class="a-Z sort">
+              <i class="fa-solid fa-arrow-down-short-wide fa-lg"></i>
+            </button>
+            <button class="z-A sort hidden">
+              <i class="fa-solid fa-arrow-up-short-wide fa-lg"></i>
+            </button>
+          </div>
+
+          <div class="inp">
+            <input type="text" name="" id="" />
+            <button class="remove"><i class="fa-regular fa-circle-xmark fa-xl remo"></i> <i class="fa-solid fa-circle-xmark fa-xl hidden"></i></button>
+          </div>
+
+          <ul id="list">
+            <li>
+                <div class="li-left">
+                    <span class="count">1.</span>
+                    <span class="notchecked">Task 1</span>
+                </div>
+                <button class="remove"><i class="fa-regular fa-circle-xmark fa-xl remo"></i> <i class="fa-solid fa-circle-xmark fa-xl hidden"></i></button>
+            </li>
+            <li>
+                <div class="li-left">
+                    <span class="count">2.</span>
+                    <span class="notchecked">Task 2</span>
+                </div>
+                <button class="remove"><i class="fa-regular fa-circle-xmark fa-xl remo"></i> <i class="fa-solid fa-circle-xmark fa-xl hidden"></i></button>
+            </li>
+        </ul>
+
+          <div class="add">
+            <button class="addInp">+</button>
+            <button class="addBtn">Add</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
