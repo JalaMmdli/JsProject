@@ -37,9 +37,12 @@ function checkListStatus() {
 }
 
 addBtn.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    if (input.value.trim() !==""){
     let value = input.value.trim();
     let taskCount = list.childElementCount;
     let newLi = document.createElement("li");
+
   newLi.innerHTML = `
              <div class="li-left">
                     <span class="count">${taskCount + 1}.</span>
@@ -57,7 +60,10 @@ addBtn.addEventListener("click", (e) => {
     list.classList.remove("hiddenList"); 
 
  
-  
+}
+else {
+    alert("Input cannot be empty!"); 
+}
 });
 
 addInp.addEventListener("click",()=>{
