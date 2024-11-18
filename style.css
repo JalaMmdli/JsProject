@@ -39,28 +39,36 @@ height: 34px;
     padding: 20px;
 }
 .hidden{
-   display:none ;
+   display:none;
 }
 .sortBtns{
    text-align: right;
 
 }
-.sort , .remove{
+.sort , .remove , .clear{
     border: none;
     background:white;
     color: #C4C4C4;
+    padding: 10px;
+
 }
 .sort{
-    padding: 10px 5px;
 }
 .sort:hover{
     color: black;
 }
 .remove:hover .hidden{
    display:inline;
-   color: purple;
+   color: #833AE0;
+}
+.clear:hover .hidden{
+   display:inline;
+   color: #833AE0;
 }
 .remove:hover .remo{
+   display: none;
+}
+.clear:hover .remo{
    display: none;
 }
 .remove{
@@ -86,7 +94,7 @@ height: 34px;
   padding: 0;
   border: 1px solid #C4C4C4;
   border-radius: 10px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   margin-bottom: 20px;
 }
 
@@ -95,7 +103,7 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0.5rem;
+    padding: 10px 0;
     width: 100%;
 }
 
@@ -104,6 +112,7 @@ li {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding-left: 10px;
     
 }
 .add{
@@ -139,3 +148,11 @@ color: white;
 border-top-right-radius: 71px;
 border-bottom-right-radius: 71px;
 }
+
+
+.hiddenInput{
+    display:none !important;
+ }
+.hiddenList{
+    display:none !important;
+ }
